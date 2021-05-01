@@ -1,0 +1,50 @@
+/*Header Code*/
+header{
+  padding: 25px 5% 1px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: -10px;
+  z-index: 5;
+  background: #fff;
+  transition: background-color 1s;
+}
+.navBtn{
+  background-color: #00FF00;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 2px 30px 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  transition: ease 0.7s;
+}
+.navBtn:hover{
+    transform: scale(1.1);
+}
+.navBtn a{
+  font-family: 'Averia Serif Libre', cursive;
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Responsive header*/
+@media screen and (max-width: 535px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    header h1{
+        font-size: 2.1rem;
+    }
+}
+@media screen and (max-width: 1105px){
+    header{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}

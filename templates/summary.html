@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Declaration-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Balsamiq+Sans:wght@700&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+        
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous" />
+
+
+        <link href="{{ url_for('static', filename='styles/header.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='styles/summaryStyle.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='styles/loader.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='styles/gsapBtn.css') }}" rel="stylesheet" type="text/css">
+
+        
+        <title>Summary | DECODE-X</title>
+    </head>
+    <body>
+
+        <!--Loader-->
+        <section class="loader">
+            <div class="spiner"></div>
+            <p>Loading...</p>
+        </section>
+
+        <header>
+            <h1>DECODE-X</h1>
+            <div class="navBtn">
+                <a href="/">Home</a>
+            </div>
+        </header>
+
+        <div class="txtBody">
+            <div class="sumTxt">
+                <h2>Summarised Text</h2>
+                <p>{% autoescape false %}{{summary}}{% endautoescape %}</p>
+            </div>
+            <div class="oriTxt">
+                <h2>Original Text</h2>
+                <p class="oriTxtP">{% autoescape false %}{{name}}{% endautoescape %}</p>
+                <button class="oriBtn">Show Text</button>
+            </div>
+        </div>
+
+
+        <!--GSAP Btn-->
+        <div class="btnCon">
+            <div class="btnC">
+                <svg class="goo">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                      <feComposite in="SourceGraphic" in2="goo"/>
+                    </filter>
+                  </defs>
+                </svg>
+
+                <span class="button--bubble__container">
+                  <a href="/" class="button button--bubble">
+                    Go Back
+                  </a>
+                  <span class="button--bubble__effect-container">
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+
+                    <span class="button effect-button"></span>
+
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
+                  </span>
+                </span>
+            </div>
+        </div>
+
+        <!-- JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--GASP Animation Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+
+        <!--Local Scripts-->
+        <script src="{{ url_for('static', filename='scripts/header.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/redirectPageScript.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts/loader.js') }}"></script>
+
+
+    </body>
+</html>

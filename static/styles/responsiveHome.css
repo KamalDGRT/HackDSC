@@ -1,0 +1,184 @@
+/*Responsive Home Body*/
+@media screen and (max-width: 1105px){
+    .lanBody, hiws{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .aCon1, .blob-btn, .formBtn{
+        font-size: 15px;
+    }
+    .con1 h2, .con2H3{
+        font-size: 2.1rem;
+    }
+    .con1 p{
+      font-size: 1.1rem;
+      width: 85%;
+    }
+    .formInputHead{
+        font-size: 1.2rem;
+    }
+    .switchOption h5{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    body{
+        text-align: center;
+    }
+    .con1{
+        width: 75%;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .con1 p{
+        width: 100%;
+    }
+    .BtnCon{
+        justify-content: center;
+    }
+    .con2{
+        margin-top: 20vh;
+    }
+
+    /*How it Works Section*/
+    .hiws {
+        padding-top: 10%;
+    }
+
+    .feat-card-container {
+        margin: 8vh 0;
+     }
+
+    .index-num {
+        margin-right: 0;
+    }
+
+    .index-num-container {
+        background-color: #FFF0EC;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .feat-card {
+        padding: 30px 0;
+        width: 70%;
+        margin: auto;
+    }
+
+    .feat-content h3 {
+        justify-content: center;
+        background-color: #FFF0EC;
+    }
+    .feat-content h3 {
+        font-size: 1rem;
+    }
+
+    .feat-content p {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 652px){
+    .lanBody {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .con1{
+        width: 90%;
+    }
+    .inputTypeCon{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .lanBody {
+        margin: 10vh 1%;
+    }
+    .con1{
+        height: 60vh;
+        width: 95%;
+    }
+    .inputTypeCon{
+        width: 95%;
+    }
+    .con1 h2{
+        font-size: 1.8rem;
+    }
+    .con1 p{
+        font-size: 1rem;
+    }
+
+    /*How it Works Section*/
+     .feat-card {
+        width: 100%;
+    }
+
+    .feat-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .feat-content p {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .lanBody {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .con1{
+        height: 68vh;
+    }
+
+    .con1 h2{
+        font-size: 1.6rem;
+    }
+    .con1 p{
+        font-size: 0.9rem;
+    }
+    .BtnCon{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aCon1{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .con2{
+        margin-top: 30vh;
+    }
+    .con2H3{
+        margin-bottom: 5vh;
+        font-size: 1.6rem;
+    }
+    .headSwitch{
+        flex-direction: column;
+    }
+    .formInputHead {
+        font-size: 1.2rem;
+    }
+    .switchOption{
+        margin: 10px 0;
+        width: 90%;
+    }
+    .inputTypeCon{
+        width: 80%;
+        margin: 2vh 0;
+    }
+
+    /*How it Works Section*/
+    .feat-content h3 {
+        font-size: 0.85rem;
+        height: 32px;
+    }
+
+  .index-num {
+    width: 48px;
+    height: 32px;
+  }
+}

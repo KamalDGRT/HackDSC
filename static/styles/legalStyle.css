@@ -1,0 +1,133 @@
+/* Default Code */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #444;
+}
+
+p {
+    font-family: 'Averia Serif Libre', cursive;
+    color: rgb(152, 151, 151);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin: 8vh 0 0;
+}
+
+h2{
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.txtBody{
+    margin: 15vh 5%;
+}
+
+.lgPerCon, .sumOriCon{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 15vh;
+}
+
+.sumTxt, .oriTxt{
+    width: 40%;
+}
+
+.lgTxt{
+    width: 60%;
+}
+
+.perChart p, .sumTxtP, .oriTxtP{
+    display: none;
+}
+
+#pieChartCon{
+    height: 50vh;
+    position: sticky;
+    top: 10vh;
+}
+
+.oriBtn, .sumBtn{
+    padding: 7px 10px 5px;
+    background: #fff;
+    margin: 8vh 0;
+    cursor: pointer;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    transition: ease 0.5s;
+    color: rgb(152, 151, 151);
+    font-size: 14px;
+}
+.oriBtn:focus, .sumBtn:focus{
+    outline: none;
+}
+.oriBtn:hover, .sumBtn:hover{
+    background: #00FF00;
+    color: #666;
+    transform: scale(1.05);
+}
+
+/*Dynamic Class*/
+.dis{
+    display: block;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 890px){
+    .sumTxt, .oriTxt{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .sumOriCon, .lgPerCon{
+        flex-direction: column;
+    }
+    .lgTxt{
+        margin-bottom: 5vh;
+    }
+    .lgTxt, .perChart, .sumTxt, .oriTxt{
+        width: 90%;
+    }
+    .lgPerCon{
+        margin-bottom: 10vh;
+    }
+    #pieChartCon{
+        margin-top: 20px;
+    }
+    .oriBtn, .sumBtn{
+        margin: 4vh 0 12vh;
+    }
+}
+@media screen and (max-width: 535px){
+
+    .lgTxt, .perChart, .sumTxt, .oriTxt{
+        width: 100%;
+    }
+    #pieChartCon{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 383px){
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    #pieChartCon{
+        height: 35vh;
+    }
+    .oriBtn, .sumBtn{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,158 @@
+/* Default Code */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #444;
+}
+
+
+p {
+    font-family: 'Averia Serif Libre', cursive;
+    color: rgb(152, 151, 151);
+    line-height: 1.5;
+}
+
+/* Styling of the Loader */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FBFBFB;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #00FF00;
+  border-bottom: 12px solid #00FF00;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.loader p{
+  font-size: 2rem;
+  color: #00FF00;
+  margin-top: 20px;
+}
+/* KeyFrames for loader spiner*/
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*Input File Styling*/
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.imageSearch label {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  border-radius: 25px;
+  background: #00FF00;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+  margin-left: 4.5vw;
+}
+.imageSearch input:hover + label,
+.imageSearch input:focus + label {
+  transform: scale(1.05);
+}
+
+
+/* ...........Design for Toogle button.............. */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  box-shadow: hsla(210, 40%, 52%, .4) 1px 1px 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00FF00;
+}
+
+input:focus +  .slider {
+  box-shadow: hsla(210, 40%, 52%, .4) 1px 1px 10px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*............Design End........... */

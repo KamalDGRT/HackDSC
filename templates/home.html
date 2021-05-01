@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Declaration-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Balsamiq+Sans:wght@700&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        crossorigin="anonymous" />
+
+        <!--Local Style-->
+        <link rel="stylesheet" href="static/styles/header.css">
+        <link rel="stylesheet" href="static/styles/style.css">
+        <link rel="stylesheet" href="static/styles/animation.css">
+        <link rel="stylesheet" href="static/styles/default.css">
+        <link rel="stylesheet" href="static/styles/loader.css">
+        <link rel="stylesheet" href="static/styles/responsiveHome.css">
+
+
+        <title>DECODE-X</title>
+
+    </head>
+    <body>
+
+        <!--Loader-->
+        <section class="loader">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </section>
+
+        <!--Header with navBar-->
+        <header>
+            <h1>DECODE-X</h1>
+            <div class="navBtn">
+              <a href="/">Home</a>
+            </div>
+        </header>
+
+        <main>
+
+        <!--landing BOdy-->
+            <section class="row lanBody">
+
+        <!--    Text Section-->
+                <div class="col-lg-5 con1">
+                    <h2 id="typedTxt"></h2>
+                    <p class="pCon1">With AI/ML models at the heart of it. Our platform provides you best Summary & Legal analysis using Natural Language Processing & Reccuring Neural Network.</p>
+
+                    <div class="BtnCon">
+                        <a class="aCon1" href="#hiws">
+                            How it Works<i class="fas fa-chevron-down workI"></i>
+                        </a>
+                          <!-- Animated Button -->
+                          <a href="#formContainer" class="buttons">
+                            <button class="blob-btn">
+                              Try it Out <i class="fab fa-google-play tryI"></i>
+                              <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                  <span class="blob-btn__blob"></span>
+                                </span>
+                              </span>
+                            </button>
+                          </a>
+                    </div>
+
+                </div>
+
+
+        <!--     Form Section-->
+                <div id="formContainer" class="col-lg-7 con2">
+                    <form action="" method = "post" enctype=multipart/form-data>
+                        <h3 class="con2H3">Provide Input Here</h3>
+
+        <!--            First Input Field-->
+                        <div class="inputTypeCon">
+                            <div class="headSwitch">
+                                <h4 class="formInputHead">Choose Input Type:</h4>
+                                <div class="switchOption">
+                                    <label class="switch">
+                                      <input class="inputCheck" type="checkbox" name='mode'>
+                                      <span class="slider round"></span>
+                                    </label>
+                                    <h5 class="optionHead1">Text</h5>
+                                </div>
+                            </div>
+                            <div class="inputContainer">
+                                <textarea class="textSearch" placeholder="Enter Text" name="search"></textarea>
+                                <div class="imageSearch">
+                                  <input type="file" id="file" class="file" name='img'>
+                                  <label for="file">Select file</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <!--Second Input Field-->
+                        <div class="inputTypeCon">
+                            <div class="headSwitch">
+                                <h4 class="formInputHead">Choose Language:</h4>
+                                <div class="switchOption">
+                                    <label class="switch">
+                                      <input class="langCheck" type="checkbox" name='lang'>
+                                      <span class="slider round"></span>
+                                    </label>
+                                    <h5 class="optionHead2">English</h5>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <!--Third Input Field-->
+                        <div class="inputTypeCon">
+                            <div class="headSwitch">
+                                <h4 class="formInputHead">Choose Mode:</h4>
+                                <div class="switchOption">
+                                    <label class="switch">
+                                      <input class="modeCheck" type="checkbox" name='type'>
+                                      <span class="slider round"></span>
+                                    </label>
+                                    <h5 class="optionHead3">Summary</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="formBtn" type="submit">
+                                Generate
+                        </button>
+
+
+                    </form>
+                </div>
+            </section>
+
+
+
+        </main>
+
+        <!-- JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Local Scripts-->
+        <script type="text/javascript" src="static/scripts/animation.js"></script>
+        <script type="text/javascript" src="static/scripts/header.js"></script>
+        <script type="text/javascript" src="static/scripts/main.js"></script>
+        <script type="text/javascript" src="static/scripts/loader.js"></script>
+
+    </body>
+</html>
+
+

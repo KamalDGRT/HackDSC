@@ -1,0 +1,100 @@
+/* Default Code */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #444;
+}
+
+p {
+    font-family: 'Averia Serif Libre', cursive;
+    color: rgb(152, 151, 151);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin: 8vh 0;
+}
+
+.txtBody{
+    margin: 15vh 5% 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sumTxt, .oriTxt{
+    width: 40%;
+}
+
+.oriTxtP{
+    display: none;
+}
+h2{
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.oriBtn{
+    padding: 7px 10px 5px;
+    background: #fff;
+    margin: 8vh 0;
+    cursor: pointer;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    transition: ease 0.5s;
+    color: rgb(152, 151, 151);
+    font-size: 14px;
+}
+.oriBtn:focus{
+    outline: none;
+}
+.oriBtn:hover{
+    background: #00FF00;
+    color: #666;
+    transform: scale(1.05);
+}
+
+/*Dynamic Class*/
+.dis{
+    display: block;
+}
+
+/*Responsive Code*/
+@media screen and (max-width: 890px){
+    .sumTxt, .oriTxt{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 745px){
+    .txtBody{
+        flex-direction: column;
+    }
+    .sumTxt, .oriTxt{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 535px){
+
+    .sumTxt, .oriTxt{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px){
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .oriBtn{
+        font-size: 10px;
+    }
+}

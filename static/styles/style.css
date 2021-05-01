@@ -1,0 +1,150 @@
+/* Landing Body Code */
+.lanBody{
+    margin: 15vh 5%;
+}
+
+/* Landing Text BODY Code */
+.con1{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.con1 h2{
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: #333;
+    margin: 1vh 0;
+}
+.con1 p{
+  font-size: 1.2rem;
+  width: 75%;
+}
+
+.BtnCon{
+    display: flex;
+    align-items: flex-end;
+}
+
+.aCon1{
+  font-family: 'Averia Serif Libre', cursive;
+  padding: 13px 35px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #00FF00;
+  color: #444;
+  margin-right: 15px;
+  box-shadow: hsla(210, 40%, 52%, .4) 2px 2px 22px;
+}
+.aCon1:hover{
+  text-decoration: none;
+  color: #444;
+}
+
+i{
+    margin-left: 10px;
+}
+
+/* Landing Form Body code*/
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.con2H3{
+    margin-bottom: 2vh;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.inputTypeCon{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+.headSwitch{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 20px 0;
+}
+.switchOption{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputContainer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageSearch{
+    display: none;
+}
+.textSearch{
+    resize: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 100;
+    color: #9E9C97;
+}
+
+/*How it Works Section*/
+iframe{
+    width: 90%;
+}
+
+.hiws {
+  background-color: rgb(251, 251, 251);
+  padding: 20vh 5%;
+  overflow-x: hidden;
+}
+
+.feat-card-container h2, .vidSec h2{
+    font-size: 2em;
+    margin-bottom: 8vh;
+}
+
+.feat-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.index-num {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: center;
+  background-color: #00FF00;
+  color: #ffffff;
+  height: 40px;
+  width: 60px;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.feat-content h3 {
+  font-size: 1.2rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.feat-content p {
+  font-size: 0.9rem;
+  width: 65%;
+}

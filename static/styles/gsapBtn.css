@@ -1,0 +1,136 @@
+/*Button Styling*/
+.btnCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5% 5vh;
+}
+
+.btnC {
+	 display: block;
+	 height: 100%;
+	 animation: hue-rotate 10s linear infinite;
+}
+ .button {
+	 -webkit-font-smoothing: antialiased;
+	 background-color: #222;
+	 border: none;
+	 color: #fff;
+	 display: inline-block;
+	 font-size: 14px;
+	 font-weight: 100;
+	 text-decoration: none;
+	 user-select: none;
+	 letter-spacing: 1px;
+	 color: white;
+	 padding: 18px 36px;
+	 text-transform: uppercase;
+	 transition: all 0.1s ease-out;
+}
+ .button:hover {
+	 background-color: #90feb5;
+	 color: #fff;
+}
+ .button:active {
+	 transform: scale(0.95);
+}
+.button--bubble {
+	position: relative;
+	z-index: 2;
+	color: white;
+	background: none;
+}
+.button--bubble:hover {
+	background: none;
+	text-decoration: none;
+}
+.button--bubble:hover + .button--bubble__effect-container .circle {
+	background: #44fd82;
+}
+.button--bubble:hover + .button--bubble__effect-container .button {
+	background: #44fd82;
+}
+.button--bubble:active + .button--bubble__effect-container {
+	transform: scale(0.95);
+}
+.button--bubble__container {
+	position: relative;
+	display: inline-block;
+}
+.button--bubble__container .effect-button {
+	position: absolute;
+	width: 50%;
+	height: 25%;
+	top: 50%;
+	left: 25%;
+	z-index: 1;
+	transform: translateY(-50%);
+	background: #222;
+	transition: background 0.1s ease-out;
+}
+.button--bubble__effect-container {
+	position: absolute;
+	display: block;
+	width: 200%;
+	height: 400%;
+	top: -150%;
+	left: -50%;
+	-webkit-filter: url("#goo");
+	filter: url("#goo");
+	transition: all 0.1s ease-out;
+	pointer-events: none;
+}
+.button--bubble__effect-container .circle {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 15px;
+	background: #222;
+	transition: background 0.1s ease-out;
+}
+.button--bubble__effect-container .circle.top-left {
+	top: 40%;
+	left: 27%;
+}
+.button--bubble__effect-container .circle.bottom-right {
+    bottom: 40%;
+	right: 27%;
+}
+.goo {
+	position: absolute;
+	visibility: hidden;
+	width: 1px;
+    height: 1px;
+}
+
+.button--bubble__container {
+	top: 50%;
+	margin-top: -25px;
+}
+@keyframes hue-rotate {
+	from {
+		-webkit-filter: hue-rotate(0);
+		-moz-filter: hue-rotate(0);
+		-ms-filter: hue-rotate(0);
+		filter: hue-rotate(0);
+    }
+	to {
+		-webkit-filter: hue-rotate(360deg);
+		-moz-filter: hue-rotate(360deg);
+	    -ms-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 745px){
+    .btnCon{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .button{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
